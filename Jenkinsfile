@@ -27,13 +27,6 @@ pipeline {
                 '''
             }
         }
-
-        stage('3. Ejecutar Aplicación') {
-            steps {
-                echo 'Probando la aplicación desplegada de forma local...'
-                sh 'python3 /var/jenkins_home/deploy/app.py'
-            }
-        }
     }
 
     post {
